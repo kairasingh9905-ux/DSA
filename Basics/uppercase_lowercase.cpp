@@ -7,11 +7,11 @@ int main()
     cin >> ch;
     if (ch >= 'a' && ch <= 'z')
     {
-        cout << ch << " is LOWERCASE";
+        cout << ch << " is LOWERCASE" << endl;
     }
     else
     {
-        cout << ch << " is UPPERCASE";
+        cout << ch << " is UPPERCASE" << endl;
     }
     return 0;
 }
