@@ -9,7 +9,7 @@ int main()
     {
         for (j = 1; j <= n; j++)
         {
-            cout << j;
+            cout << j << " ";
         }
         cout << endl;
     }
