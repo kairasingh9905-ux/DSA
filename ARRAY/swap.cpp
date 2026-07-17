@@ -4,7 +4,7 @@ using namespace std;
 
 int max(int arr[], int sz)
 {
-    int b = INT_MIN;
+    int b = INT_MIN; // - infinity
     int max = 0;
     for (int i = 0; i < sz; i++)
     {
@@ -18,7 +18,7 @@ int max(int arr[], int sz)
 }
 int min(int arr[], int sz)
 {
-    int a = INT_MAX;
+    int a = INT_MAX; // +infinity
     int min = 0;
     for (int i = 0; i < sz; i++)
     {
