@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int sum(vector<int> &arr, int sz)
+int sum(int arr[], int sz)
 {
     int sum = 0;
     for (int i = 0; i < sz; i++)
@@ -9,7 +9,7 @@ int sum(vector<int> &arr, int sz)
     }
     return sum;
 }
-int product(vector<int> &arr, int sz)
+int product(int arr[], int sz)
 {
     int product = 1;
     for (int i = 0; i < sz; i++)
@@ -23,15 +23,13 @@ int main()
     int sz, i;
     cout << " enter size of array :";
     cin >> sz;
-    vector<int> arr(sz);
-    cout << "enter numbers of array:";
-
+    int arr[1000];
+    cout << "enter numbers of an array:";
+    for (int i = 0; i < sz; i++)
     {
-        for (int i = 0; i < sz; i++)
-        {
-            cin >> arr[i];
-        }
+        cin >> arr[i];
     }
+
     cout << "SUM= " << sum(arr, sz) << endl;
     cout << "PRODUCT= " << product(arr, sz) << endl;
 }

@@ -30,7 +30,7 @@ int min(int arr[], int sz)
     }
     return min;
 }
-void swap(int &max_arr, int &min_arr)
+void swap(int &max_arr, int &min_arr) // pass by reference
 {
     int temp = max_arr;
     max_arr = min_arr;
