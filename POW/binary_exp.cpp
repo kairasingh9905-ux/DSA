@@ -20,18 +20,22 @@ int main()
     cin >> x;
     cout << "enter power: ";
     cin >> n;
-    int bin = binary(n);
-    double ans = 1, pow = x;
+    int bin;
     if (n < 0)
     {
         x = 1 / x;
-        bin = bin;
+        bin = binary(-n);
     }
+    else
+    {
+        bin = binary(n);
+    }
+    double ans = 1, pow = x;
     while (bin > 0)
     {
         if (bin % 10 == 1)
         {
-            ans = x * pow;
+            ans = ans * pow;
             pow = pow * pow;
         }
         else
