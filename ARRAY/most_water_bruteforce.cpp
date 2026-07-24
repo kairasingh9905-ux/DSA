@@ -21,5 +21,5 @@ int main()
     int sz = 9;
     int arr[9] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
     int max_water = water(arr, sz);
-    cout << max_water << endl;
+    cout << "MOST WATER IN THE COTAINER: " << max_water << endl;
 }
