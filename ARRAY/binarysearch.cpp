@@ -7,11 +7,11 @@ int search(vector<int> arr, int tar)
     while (st <= end)
     {
         int mid = (st + end) / 2;
-        if (arr[mid] < tar)
+        if (arr[mid] < tar) // 2nd half of the array
         {
             st = mid + 1;
         }
-        else if (arr[mid] > tar)
+        else if (arr[mid] > tar) // 1st half of the array
         {
             end = mid - 1;
         }
@@ -24,7 +24,10 @@ int search(vector<int> arr, int tar)
 }
 int main()
 {
-    vector<int> arr = {-1, 0, 3, 4, 5, 9, 12};
-    int tar = 12;
-    cout << search(arr, tar) << endl;
+    vector<int> arr1 = {-1, 0, 3, 4, 5, 9, 12};
+    int tar1 = 12;
+    cout << "ODD ARRAY : " << search(arr1, tar1) << endl;
+    vector<int> arr2 = {-1, 0, 3, 4, 9, 1};
+    int tar2 = 0;
+    cout << "EVEN ARRAY: " << search(arr2, tar2) << endl;
 }
