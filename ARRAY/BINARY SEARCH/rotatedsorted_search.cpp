@@ -6,7 +6,7 @@ int search(vector<int> arr, int tar)
     int st = 0, end = arr.size() - 1;
     while (st <= end)
     {
-        int mid = st + (end - st) / 2;
+        int mid = st + (end - st) / 2; // optimised mid formula
         if (arr[mid] == tar)
         {
             return mid;
