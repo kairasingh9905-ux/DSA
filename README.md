@@ -6,4 +6,4 @@ Author-Kaira Singh
 <br> 
 Completed: Basic Fundamentals of C++ , Pattern Printing , Loops, Functions, Array
 <br>
-In Progress : 
+In Progress : Binary operations on array , Pointers
