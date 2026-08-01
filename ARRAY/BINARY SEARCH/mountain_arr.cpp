@@ -3,7 +3,7 @@
 using namespace std;
 int search(vector<int> arr)
 {
-    int st = 0, end = arr.size() - 1;
+    int st = 1, end = arr.size() - 2; // first and last values are never the peak values
     int mid = st + (end - st) / 2;
     while (st < end)
     {
@@ -22,7 +22,7 @@ int search(vector<int> arr)
             end = mid - 1;
         }
     }
-    return st; // shrinking condition
+    return -1; // shrinking condition
 }
 int main()
 {
