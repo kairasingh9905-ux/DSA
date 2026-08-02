@@ -40,5 +40,5 @@ int main()
 {
     vector<int> arr = {3, 4, 5, 6, 7, 0, 1, 2};
     int tar = 0;
-    cout << search(arr, tar) << endl;
+    cout << "TARGET ELEMENT AT INDEX(through rotated array) :" << search(arr, tar) << endl;
 }
