@@ -39,5 +39,5 @@ int single(vector<int> arr)
 int main()
 {
     vector<int> arr = {1, 1, 2, 2, 3, 3, 4, 4, 8};
-    cout << "SINGLE ELEMENT IN ARRAY(INDEX): " << single(arr) << endl;
+    cout << "SINGLE ELEMENT IN ARRAY: " << single(arr) << endl;
 }
