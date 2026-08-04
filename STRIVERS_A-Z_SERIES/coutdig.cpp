@@ -9,7 +9,7 @@ int count_dig(int n)
     int dig = 0;
     while (n != 0)
     {
-        n = n / 10;
+        n = n / 10; // removing last digit
         dig += 1;
     }
     return dig;
