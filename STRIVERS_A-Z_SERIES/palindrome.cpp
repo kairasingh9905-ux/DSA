@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-bool palindrome(int n)
+void palindrome(int n)
 {
     int og = n;
     int rev = 0;
@@ -10,12 +10,19 @@ bool palindrome(int n)
         rev = rev * 10 + last_dig;
         n = n / 10;
     }
-    return rev == og;
+    if (rev == og)
+    {
+        cout << "True" << endl;
+    }
+    else
+    {
+        cout << "False" << endl;
+    }
 }
 int main()
 {
     int n;
     cout << "enter number: ";
     cin >> n;
-    cout << palindrome(n) << endl;
+    palindrome(n);
 }
