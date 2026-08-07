@@ -6,7 +6,7 @@ int odd(vector<int> arr, int n)
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] % 2 != 0)
+        if (arr[i] % 2 != 0) // checking for odd number
         {
             count += 1;
         }
@@ -18,7 +18,7 @@ int main()
     int n;
     cout << "enter the size of the array: ";
     cin >> n;
-    vector<int> arr(n);
+    vector<int> arr(n); // taking input from the user
     cout << "enter numbers of array: ";
     for (int i = 0; i < n; i++)
     {
