@@ -6,12 +6,12 @@ bool check(vector<int> arr, int n, int m, int mid)
     int st = 1, pages = 0;
     for (int i = 0; i < n; i++)
     {
-        if (pages + arr[i] <= mid) // pages should be less than maximum allocation of pages
-        {
+        if (pages + arr[i] <= mid)
+        { // pages should be less than maximum allocation of pages
             pages += arr[i];
         }
-        else // if pages exceeds the limit
-        {
+        else
+        { // if pages exceeds the limit
             st++;
             pages = arr[i];
         }
@@ -42,12 +42,12 @@ int main()
         if (check(arr, n, m, mid))
         {
             ans = mid;
-            end = mid - 1; // need smaller mid
-        }
+            end = mid - 1;
+        } // need smaller mid
         else
         {
-            start = mid + 1; // need bigger mid
-        }
+            start = mid + 1;
+        } // need bigger mid
     }
     cout << ans << endl;
     return 0;
