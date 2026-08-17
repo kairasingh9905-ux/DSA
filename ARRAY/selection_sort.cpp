@@ -4,7 +4,7 @@ void selection(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        int si = i; // by default its 0th index
+        int si = i; // by default its 0th index for unsorted arr
         for (int j = i + 1; j < n; j++)
         {
             if (arr[j] < arr[si]) // comparing 0th index and 1st element
