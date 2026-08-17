@@ -4,9 +4,9 @@ using namespace std;
 void bubble(vector<int> &arr)
 {
     int n = arr.size();
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // outer loop for iterations
     {
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < n - i - 1; j++) // inner loop to check two numbers and for inner iterations
         {
             if (arr[j] > arr[j + 1])
             {
