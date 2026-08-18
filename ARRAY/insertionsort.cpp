@@ -6,12 +6,12 @@ void insertion(int arr[], int n)
     {
         int curr = arr[i];
         int prev = i - 1;
-        while (prev >= 0 && arr[prev] > curr)
+        while (prev >= 0 && arr[prev] > curr) // checking if the current value is lesser than its prev value
         {
-            arr[prev + 1] = arr[prev];
+            arr[prev + 1] = arr[prev]; // check before also
             prev--;
         }
-        arr[prev + 1] = curr;
+        arr[prev + 1] = curr; // replacing the value
     }
 }
 void printarr(int arr[], int n)
