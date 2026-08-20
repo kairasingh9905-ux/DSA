@@ -6,17 +6,17 @@ void sorting(vector<int> &arr, int n)
     int mid = 0, high = n - 1, low = 0;
     while (mid <= high)
     {
-        if (arr[mid] == 0)
+        if (arr[mid] == 0) // for 0
         {
             swap(arr[low], arr[mid]);
             low++;
             mid++;
         }
-        else if (arr[mid] == 1)
+        else if (arr[mid] == 1) // for 1
         {
             mid++;
         }
-        else
+        else // for 2
         {
             swap(arr[mid], arr[high]);
             high--;
