@@ -5,15 +5,15 @@ void merging(int a[], int b[], int m, int n)
     int i = m - 1, j = n - 1, indx = m + n - 1;
     while (i >= 0 && j >= 0)
     {
-        if (a[i] >= b[j])
+        if (a[i] >= b[j]) // checking the last elements of both the array
         {
-            a[indx] = a[i];
+            a[indx] = a[i]; // if element in array a is larger
             i--;
             indx--;
         }
         else
         {
-            a[indx] = b[j];
+            a[indx] = b[j]; // if element in array b is larger
             j--;
             indx--;
         }
