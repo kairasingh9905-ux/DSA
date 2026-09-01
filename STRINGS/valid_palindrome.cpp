@@ -36,5 +36,12 @@ bool palindrome(string str)
 int main()
 {
     string str = "Ac3?e3c&a";
-    cout << palindrome(str) << endl;
+    if (palindrome(str) == 1)
+    {
+        cout << "VALID PALINDROME" << endl;
+    }
+    else
+    {
+        cout << "NOT VALID PALINDROME" << endl;
+    }
 }
