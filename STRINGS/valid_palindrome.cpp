@@ -3,7 +3,8 @@
 using namespace std;
 bool isalphanum(char ch)
 {
-    if ((ch >= '0' && ch <= '9') || (tolower(ch) >= 'a' && tolower(ch) <= 'z'))
+    if (isalnum(ch))
+
     {
         return true;
     }
