@@ -3,7 +3,7 @@
 using namespace std;
 bool isalphanum(char ch)
 {
-    if (isalnum(ch))
+    if (isalnum(ch)) // checking for alphanumeric character
 
     {
         return true;
@@ -16,21 +16,21 @@ bool palindrome(string str)
 
     while (st <= end)
     {
-        if (!isalnum(str[st]))
+        if (!isalnum(str[st])) // if st is spcl character
         {
             st++;
             continue;
         }
-        if (!isalnum(str[end]))
+        if (!isalnum(str[end])) // if end is spcl character
         {
             end--;
             continue;
         }
-        if (tolower(str[st]) != (tolower(str[end])))
+        if (tolower(str[st]) != (tolower(str[end]))) // checking for palindrome
         {
             return false;
         }
-        st++, end--;
+        st++, end--; // basic iteration of moving forward
     }
     return true;
 }
