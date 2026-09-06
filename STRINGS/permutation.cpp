@@ -14,7 +14,7 @@ bool isFreqSame(int freq[26], int windFreq[26]) // for cheking the frequency
 }
 bool permutation(string s1, string s2)
 {
-    int freq[26] = {0};
+    int freq[26] = {0}; // frequency array of s2
     for (int i = 0; i < s1.length(); i++)
     {
         freq[s1[i] - 'a']++; // frequency of s2 a->0, b->1 .......
