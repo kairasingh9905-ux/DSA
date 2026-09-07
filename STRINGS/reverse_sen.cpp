@@ -15,12 +15,13 @@ string reverse(string s)
             i++;
         }
         reverse(word.begin(), word.end());
-        ans = " " + word;
+        ans += " " + word;
     }
-    return s.substr(1);
+    return ans.substr(1);
 }
 int main()
 {
     string s = "the pen";
-    cout << reverse(s);
+    cout << "Reversed string :";
+    cout << reverse(s) << endl;
 }
