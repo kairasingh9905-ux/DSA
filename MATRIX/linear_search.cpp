@@ -16,7 +16,7 @@ bool search(int mat[][3], int rows, int cols, int key)
 }
 int main()
 {
-    int mat[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int mat[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
     int rows = 4;
     int cols = 3;
     int keys = 8;
