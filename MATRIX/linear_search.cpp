@@ -2,11 +2,11 @@
 using namespace std;
 bool search(int mat[][3], int rows, int cols, int key)
 {
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < rows; i++) // for row iteration
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < cols; j++) // for cols iteration
         {
-            if (mat[i][j] == key)
+            if (mat[i][j] == key) // checking the value
             {
                 return true;
             }
