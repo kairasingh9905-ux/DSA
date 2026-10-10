@@ -9,7 +9,7 @@ int main()
     set<vector<int>> st;
     for (int i = 0; i < arr.size(); i++)
     {
-        set<int> hashset;
+        set<int> hashset; // create a hashmap
         for (int j = i + 1; j < arr.size(); j++)
         {
             int tar = -(arr[i] + arr[j]);
@@ -19,7 +19,7 @@ int main()
                 sort(temp.begin(), temp.end());
                 st.insert(temp);
             }
-            hashset.insert(arr[j]);
+            hashset.insert(arr[j]); // sending the value to hashmap
         }
     }
     vector<vector<int>> ans(st.begin(), st.end());
