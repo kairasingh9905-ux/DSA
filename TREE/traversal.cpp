@@ -42,7 +42,7 @@ int main()
     vector<int> order = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
     Node *root = buildTree(order);
     cout << root->data << endl; // printing root of the tree
-    preOrder(root);
+    preOrder(root);             // root->left->right
     cout << endl;
     return 0;
 }
