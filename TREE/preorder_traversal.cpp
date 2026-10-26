@@ -41,7 +41,7 @@ int main()
 {
     vector<int> order = {3, 4, -1, -1, 5, 6, -1, -1, 2, -1, -1};
     Node *root = buildTree(order);
-    preorder(root);
+    preorder(root); // left->right->root
     cout << endl;
     return 0;
 }
