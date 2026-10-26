@@ -35,15 +35,15 @@ void inOrder(Node *root)
         return;
     }
     inOrder(root->left);
-    cout << root->data;
+    cout << root->data << " ";
     inOrder(root->right);
 }
 int main()
 {
     vector<int> order = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
     Node *root = buildTree(order);
-    cout << root->data << endl;
-    inOrder(root);
+    cout << root->data << endl; // print root
+    inOrder(root);              // left->root->right
     cout << endl;
     return 0;
 }
