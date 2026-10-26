@@ -52,5 +52,6 @@ int main()
 {
     vector<int> preorder = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
     Node *root = buildTree(preorder);
-    levelOrder(root);
+    levelOrder(root); // 1stlevel->2ndlevel->3rd level->dont print null value
+    return 0;
 }
