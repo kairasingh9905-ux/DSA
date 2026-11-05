@@ -34,8 +34,8 @@ void preOrder(Node *root)
         return;
     }
     cout << root->data << " "; // printing root value
-    preOrder(root->left);      // traversing right tree
-    preOrder(root->right);     // traversing left tree
+    preOrder(root->left);      // traversing left  tree
+    preOrder(root->right);     // traversing right tree
 }
 int main()
 {
