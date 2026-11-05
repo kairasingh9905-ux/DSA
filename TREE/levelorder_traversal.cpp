@@ -30,18 +30,18 @@ Node *buildTree(vector<int> preorder)
 }
 void levelOrder(Node *root)
 {
-    queue<Node *> q;
+    queue<Node *> q; // queue formed
     q.push(root);
     while (q.size() > 0)
     {
-        Node *curr = q.front();
+        Node *curr = q.front(); // pop out the root value
         q.pop();
-        cout << curr->data << " ";
+        cout << curr->data << " "; // printing the current values
         if (curr->left != NULL)
         {
-            q.push(curr->left);
+            q.push(curr->left); // pulling out the left value which is not null
         }
-        if (curr->right != NULL)
+        if (curr->right != NULL) // pulling out the right value which is not null
         {
             q.push(curr->right);
         }
