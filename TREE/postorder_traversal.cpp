@@ -22,9 +22,9 @@ Node *buildTree(vector<int> order)
     {
         return NULL;
     }
-    Node *root = new Node(order[indx]);
-    root->left = buildTree(order);
-    root->right = buildTree(order);
+    Node *root = new Node(order[indx]); // root found
+    root->left = buildTree(order);      // for left
+    root->right = buildTree(order);     // for right
     return root;
 }
 void preorder(Node *root)
@@ -33,9 +33,9 @@ void preorder(Node *root)
     {
         return;
     }
-    preorder(root->left);
-    preorder(root->right);
-    cout << root->data << " ";
+    preorder(root->left);      // for left node
+    preorder(root->right);     // for right node
+    cout << root->data << " "; // for root value
 }
 int main()
 {
