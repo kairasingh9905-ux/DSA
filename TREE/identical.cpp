@@ -42,13 +42,13 @@ Node *BuildTree2(vector<int> q)
 }
 bool isIdentical(Node *root1, Node *root2)
 {
-    if (root1 == NULL || root2 == NULL)
+    if (root1 == NULL || root2 == NULL) // Base case for root value
     {
         return root1 == root2;
     }
-    bool isLeftSame = isIdentical(root1->left, root2->left);
-    bool isRightSame = isIdentical(root1->right, root2->right);
-    return isLeftSame && isRightSame && root1->data == root2->data;
+    bool isLeftSame = isIdentical(root1->left, root2->left);        // check subtree left is identical
+    bool isRightSame = isIdentical(root1->right, root2->right);     // check subtree right is identical
+    return isLeftSame && isRightSame && root1->data == root2->data; // true only if left right and nodes are same
 }
 int main()
 {
@@ -57,4 +57,5 @@ int main()
     Node *root1 = BuildTree1(p);
     Node *root2 = BuildTree2(q);
     cout << isIdentical(root1, root2) << endl;
+    return 0;
 }

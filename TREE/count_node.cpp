@@ -42,4 +42,5 @@ int main()
     vector<int> preorder = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
     Node *root = BuildTree(preorder);
     cout << "count of nodes: " << count_node(root) << endl;
+    return 0;
 }
