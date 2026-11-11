@@ -15,7 +15,7 @@ public:
     }
 };
 int indx = -1;
-Node *BuildTree1(vector<int> p)
+Node *BuildTree1(vector<int> p) // for building the first tree
 {
     indx++;
     if (p[indx] == -1)
@@ -28,7 +28,7 @@ Node *BuildTree1(vector<int> p)
     return root1;
 }
 int i = -1;
-Node *BuildTree2(vector<int> q)
+Node *BuildTree2(vector<int> q) // for building the 2nd tree
 {
     i++;
     if (q[i] == -1)
