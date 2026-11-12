@@ -15,7 +15,7 @@ public:
     }
 };
 int indx = -1;
-Node *BuildTree(vector<int> p)
+Node *BuildTree(vector<int> p) // building tree
 {
     indx++;
     if (p[indx] == -1)
@@ -28,7 +28,7 @@ Node *BuildTree(vector<int> p)
     return root;
 }
 int i = -1;
-Node *BuildSubTree(vector<int> q)
+Node *BuildSubTree(vector<int> q) // building subtree
 {
     i++;
     if (q[i] == -1)
@@ -40,9 +40,9 @@ Node *BuildSubTree(vector<int> q)
     subroot->right = BuildSubTree(q);
     return subroot;
 }
-bool isIdentical(Node *root, Node *subroot)
+bool isIdentical(Node *root, Node *subroot) // function for checking the identical subtree and tree
 {
-    if (root == NULL || subroot == NULL)
+    if (root == NULL || subroot == NULL) // base case
     {
         return root == subroot;
     }
@@ -50,9 +50,9 @@ bool isIdentical(Node *root, Node *subroot)
     bool isRightSame = isIdentical(root->right, subroot->right);
     return isLeftSame && isRightSame && root->data == subroot->data;
 }
-bool isSubTree(Node *root, Node *subroot)
+bool isSubTree(Node *root, Node *subroot) // traversing the subtree and tree
 {
-    if (root == NULL || subroot == NULL)
+    if (root == NULL || subroot == NULL) // base case
     {
         return root == subroot;
     }
