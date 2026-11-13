@@ -28,7 +28,7 @@ Node *buildTree(vector<int> preorder)
     root->right = buildTree(preorder);
     return root;
 }
-int height(Node *root)
+int height(Node *root) // for current diameter we need to find height
 {
     if (root == NULL)
     {
@@ -44,10 +44,10 @@ int diameter(Node *root)
     {
         return 0;
     }
-    int leftDiam = diameter(root->left);
-    int rightDiam = diameter(root->right);
-    int currDiam = height(root->left) + height(root->right);
-    return max(currDiam, max(leftDiam, rightDiam));
+    int leftDiam = diameter(root->left);                     // left tree diameter without root node
+    int rightDiam = diameter(root->right);                   // right tree diameter without root node
+    int currDiam = height(root->left) + height(root->right); // diamter with node
+    return max(currDiam, max(leftDiam, rightDiam));          // find maximum of three diameter
 }
 int main()
 {
