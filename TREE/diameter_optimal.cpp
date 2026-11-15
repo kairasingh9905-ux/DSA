@@ -36,12 +36,12 @@ int height(Node *root)
     }
     int leftHeight = height(root->left);
     int rightHeight = height(root->right);
-    ans = max(ans, leftHeight + rightHeight);
+    ans = max(ans, leftHeight + rightHeight); // finding the value
     return max(leftHeight, rightHeight) + 1;
 }
 int diameter(Node *root)
 {
-    height(root);
+    height(root); // minimised this
     return ans;
 }
 int main()
