@@ -27,7 +27,7 @@ Node *buildTree(vector<int> preorder)
     root->right = buildTree(preorder);
     return root;
 }
-int maximum = INT_MIN; // to handle the -ve value
+int maximum = 0; // initializing the maximum value
 int maxPath(Node *root)
 {
     if (root == NULL)
