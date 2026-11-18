@@ -45,7 +45,7 @@ bool isSymmetric(Node *root)
     {
         return true;
     }
-    return symmetricCheck(root->left, root->right);
+    return symmetricCheck(root->left, root->right); // another function to check wheather the left and right tree
 }
 int main()
 {
