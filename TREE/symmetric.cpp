@@ -29,19 +29,19 @@ Node *buildTree(vector<int> preorder)
 }
 bool symmetricCheck(Node *left, Node *right)
 {
-    if (left == NULL || right == NULL)
+    if (left == NULL || right == NULL) // to check the node end values
     {
         return left == right;
     }
-    if (left->data != right->data)
+    if (left->data != right->data) // if values does not match
     {
         return false;
     }
-    return symmetricCheck(left->left, right->right) && symmetricCheck(left->right, right->left);
+    return symmetricCheck(left->left, right->right) && symmetricCheck(left->right, right->left); // if values match
 }
 bool isSymmetric(Node *root)
 {
-    if (root == NULL)
+    if (root == NULL) // base case
     {
         return true;
     }
