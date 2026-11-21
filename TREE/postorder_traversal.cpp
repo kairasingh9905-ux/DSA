@@ -29,7 +29,7 @@ Node *buildTree(vector<int> order)
 }
 void postorder(Node *root)
 {
-    if (root == NULL)
+    if (root == NULL) // base case
     {
         return;
     }
