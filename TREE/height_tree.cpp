@@ -29,7 +29,7 @@ Node *BuildTree(vector<int> preorder)
 }
 int height(Node *root)
 {
-    if (root == NULL)
+    if (root == NULL) // base case
     {
         return 0;
     }
