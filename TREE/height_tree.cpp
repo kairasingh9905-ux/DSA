@@ -18,13 +18,13 @@ int indx = -1;
 Node *BuildTree(vector<int> preorder)
 {
     indx++;
-    if (preorder[indx] == -1)
+    if (preorder[indx] == -1) // base case
     {
         return NULL;
     }
     Node *root = new Node(preorder[indx]);
-    root->left = BuildTree(preorder);
-    root->right = BuildTree(preorder);
+    root->left = BuildTree(preorder);  // for left tree
+    root->right = BuildTree(preorder); // for right tree
     return root;
 }
 int height(Node *root)
