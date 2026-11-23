@@ -31,7 +31,7 @@ int i = -1;
 Node *BuildSubTree(vector<int> q) // building subtree
 {
     i++;
-    if (q[i] == -1)
+    if (q[i] == -1) // base case
     {
         return NULL;
     }
