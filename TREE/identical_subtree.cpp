@@ -46,8 +46,8 @@ bool isIdentical(Node *root, Node *subroot) // function for checking the identic
     {
         return root == subroot;
     }
-    bool isLeftSame = isIdentical(root->left, subroot->left);
-    bool isRightSame = isIdentical(root->right, subroot->right);
+    bool isLeftSame = isIdentical(root->left, subroot->left);    // to check left subtree
+    bool isRightSame = isIdentical(root->right, subroot->right); // to check right subtree
     return isLeftSame && isRightSame && root->data == subroot->data;
 }
 bool isSubTree(Node *root, Node *subroot) // traversing the subtree and tree
