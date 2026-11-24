@@ -56,11 +56,11 @@ bool isSubTree(Node *root, Node *subroot) // traversing the subtree and tree
     {
         return root == subroot;
     }
-    if ((root->data == subroot->data) || isIdentical(root, subroot))
+    if ((root->data == subroot->data) || isIdentical(root, subroot)) // to check root data
     {
         return true;
     }
-    return isSubTree(root->left, subroot) || isSubTree(root->right, subroot);
+    return isSubTree(root->left, subroot) || isSubTree(root->right, subroot); // recursion method
 }
 int main()
 {
